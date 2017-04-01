@@ -12,6 +12,18 @@ function addTodo() {
         document.getElementById("todos").appendChild(li); 
     }
 }
+function makeCall() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var obj = JSON.parse(this.responseText);
+            console.log(obj);
+            document.getElementById("demo").innerHTML = obj;
+        }
+    };
+    xhttp.open("GET", "http://52.160.109.98:8080/help", true);
+    xhttp.send();
+}
 
 var go = document.getElementById("addTodo");
 var txt = document.getElementById("inputTodo");
