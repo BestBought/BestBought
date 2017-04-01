@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="otherstyle.css">
+    <link rel="icon" href="favicon.ico" >
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <title>bizi-bodi</title>
+</head>
+<body>
+    <img id="logo" src="logo.png">
+    <header id="thing">
+        <h1>Best-Bot</h1>
+    </header>
+    <div>
+        <p id="description">
+            Tell me what you're looking for!
+        </p>
+    </div>
+    <div>
+        <input type="text" id="inputTodo" placeholder="What'cha need?">
+        <input type="button" id="addTodo" value="Search!" onclick="addTodo()">
+    </div>
+    <div>
+        <ul id="todos">
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
