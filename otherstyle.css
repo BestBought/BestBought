@@ -4,6 +4,12 @@ a {
 a:hover {
     color: cadetblue;
 }
+
+#robot {
+    position: relative;
+    margin-left: 0px;
+}
+
 body {
     font-family: 'Inconsolata', monospace;
     text-align: center;
