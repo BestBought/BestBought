@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="otherstyle.css">
     <link rel="icon" href="favicon.ico" >
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Best-Bought</title>
 </head>
 <body>
@@ -13,25 +14,68 @@
     </header>
     <div class = "arrow">
     </div>
-     <div class = "arrow1">
-    </div>
-    <div class = "speech">
-        <h2 class="speech">Here's what I've found for you!</h2>
-    </div>
-    <div id = "productName">
-        <h1>
-            <a href="http://www.bestbuy.ca/en-ca/product/muse-muse-brain-sensing-headband-black-english-mu-02-bk-ef/10341529.aspx">
-                Placeholder
+    <div class = "productName">
+        <h2 class="speech">Here's what folks are saying about the  <a id = "productlink" href="http://www.bestbuy.ca/en-ca/product/muse-muse-brain-sensing-headband-black-english-mu-02-bk-ef/10341529.aspx">
+                Placeholder:
             </a>
-        </h1>
+        </h2>
     </div>
+    <input type="button" id="Test" value="Test" onclick="makeCall()">
+    
+    <table>
+        <tr id = "captionicon">
+            <td id = "OverallC" class = "cicon"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+            <td id = "ReliabilityC" class = "cicon"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+            <td id = "BatteryC" class = "cicon"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+            <td id = "PortabilityC" class = "cicon"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <th>Overall Sentiment:</th>
+            <th>Reliability:</th>
+            <th>Battery Life:</th>
+            <th>Portability:</th>
+        </tr>
+        <tr>
+            <td id = "OveralllS" class = "Rating">N/A</td>
+            <td id = "ReliabilityS" class = "Rating">N/A</td>
+            <td id = "BatteryS" class = "Rating">N/A</td>
+            <td id = "PortabilityS" class = "Rating">N/A</td>
+        </tr>
+    </table>
         
-    <div id = "productSummary">
-        <h3>Here's what people are saying about it:</h3>
-        <ul>
-            placeholder review
-        </ul>
+    <div>
+        <h3>Here are some keywords that popped up a lot:</h3>
+        <p id = "k1">p</p>
+        <p id = "k2">p</p>
+        <p id = "k3">p</p>
     </div>
+    
+    <table>
+    <tr>
+        <th>Positive Reviews</th>
+        <th>Negative Reviews</th>
+    </tr>
+    <tr>
+        <td id = "c1r1">a</td>
+        <td id = "c2r1">b</td>
+    </tr>
+    <tr id="row-3">
+        <td id = "c1r2">a</td>
+        <td id = "c2r2">b</td>
+    </tr>
+    <tr>
+        <td id = "c1r3">a</td>
+        <td id = "c2r13">b</td>
+    </tr>
+        <tr>
+        <td id = "c1r4">a</td>
+        <td id = "c2r4">b</td>
+    </tr>
+        <tr>
+        <td id = "c1r5">a</td>
+        <td id = "c2r5">b</td>
+    </tr>
+</table>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="scripts.js"></script>

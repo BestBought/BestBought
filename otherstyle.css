@@ -1,4 +1,9 @@
-
+a {
+    color: black;
+}
+a:hover {
+    color: cadetblue;
+}
 body {
     font-family: 'Inconsolata', monospace;
     text-align: center;
@@ -13,6 +18,20 @@ body {
 }
 
 div.arrow {
+    position: relative;
+    left: 629px;
+    align-items: center;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 45px 37px 45px;
+    border-color: transparent transparent cadetblue transparent;
+
+
+}
+div.arrow1 {
+    position: relative;
+    top: 500px;
     border: solid cadetblue;
     border-width: 0 10px 10px 0;
     display: inline-block;
@@ -21,12 +40,11 @@ div.arrow {
     -webkit-transform: rotate(-135deg);
 }
 
-div.speech {
-    top: -500px
-    margin-top: 50px;
+div.productName {
+    
     margin: auto;
     position: relative;
-    width: 50%;  
+    width: 40%;  
     height: 75px;
     text-align: center;
     background-color: powderblue;
@@ -48,21 +66,31 @@ input {
     border: 0;
     padding: 5px;
 }
-ul {
-    padding: 10px;
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-ul li {
-   list-style-type: none;
-    padding: 10px;
-    margin: 0, auto;
-    background-position: center;
-}
-ul li.checked {
-    text-decoration: line-through;
+th {
+    height: 50px;
 }
 
-@media (max-width: 500px) {
-    body {
-        margin: auto;
-    }
+td.cicon {
+    font-size: 65px;
+    color: gray;
 }
+
+td.favorable {
+    color: seagreen;
+}
+td.mixed {
+    color:goldenrod;
+}
+td.negative {
+    color:darkred;
+}
+
